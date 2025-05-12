@@ -1,0 +1,58 @@
+[
+    {
+        "fecha_envio": "2025-05-12",
+        "hora_envio": "10:51:17",
+        "numero_guia": "9HVOAEUVG9",
+        "estado": "En Reparto",
+        "remitente_id": "1090374340",
+        "destinatario": {
+            "nombre": "VEENZUELA SHOES",
+            "direccion": "CALLE23",
+            "telefono": "111111",
+            "ciudad": "SAN CRISTOBAL",
+            "barrio": "SAN CRISTOBAL"
+        }
+    },
+    {
+        "fecha_envio": "2025-05-12",
+        "hora_envio": "10:52:27",
+        "numero_guia": "4V4CW5RL78",
+        "estado": "En Ciudad Destino",
+        "remitente_id": "1090374340",
+        "destinatario": {
+            "nombre": "DANIEL",
+            "direccion": "CALLE 67",
+            "telefono": "333333",
+            "ciudad": "MEDELLLIN",
+            "barrio": "MEDELLIN"
+        }
+    },
+    {
+        "fecha_envio": "2025-05-12",
+        "hora_envio": "14:20:22",
+        "numero_guia": "RXEI93Y0VD",
+        "estado": "En Transito",
+        "remitente_id": "1004802127",
+        "destinatario": {
+            "nombre": "MANUEL",
+            "direccion": "CALLE 0",
+            "telefono": "00000",
+            "ciudad": "CUCUTA",
+            "barrio": "CEIBA"
+        }
+    },
+    {
+        "fecha_envio": "2025-05-12",
+        "hora_envio": "16:03:42",
+        "numero_guia": "RXZY8M2DAA",
+        "estado": "En Bodega De La Transportadora",
+        "remitente_id": "1234567",
+        "destinatario": {
+            "nombre": "mariano bruno",
+            "direccion": "carrera 23",
+            "telefono": "3855648",
+            "ciudad": "pereira",
+            "barrio": "cedros"
+        }
+    }
+]

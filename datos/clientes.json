@@ -1,0 +1,62 @@
+[
+    {
+        "nombres": "Manuel Enrique",
+        "apellidos": "Galvis Diaz",
+        "identificacion": "1090374340",
+        "tipo_identificacion": "CC",
+        "direccion": "CALLE 32",
+        "telefono_fijo": "00000000",
+        "numero_celular": "3209256697",
+        "barrio": "LA PASTORA"
+    },
+    {
+        "nombres": "JORFLEY JESUS",
+        "apellidos": "GALVIS DIAZ",
+        "identificacion": "1090362010",
+        "tipo_identificacion": "CC",
+        "direccion": "CALLE 32",
+        "telefono_fijo": "1111111",
+        "numero_celular": "3148832743",
+        "barrio": "LA PASTORA"
+    },
+    {
+        "nombres": "CELINA",
+        "apellidos": "DIAZ DIAZ",
+        "identificacion": "88620941",
+        "tipo_identificacion": "CC",
+        "direccion": "AV 19",
+        "telefono_fijo": "000000",
+        "numero_celular": "3125509514",
+        "barrio": "28 DE FEBRERP"
+    },
+    {
+        "nombres": "ALAN DAVID",
+        "apellidos": "GALVIS UNDA",
+        "identificacion": "1234567890",
+        "tipo_identificacion": "TI",
+        "direccion": "00000000",
+        "telefono_fijo": "00000000",
+        "numero_celular": "31245678",
+        "barrio": "LA PASTORA"
+    },
+    {
+        "nombres": "CAROLINA DEISY",
+        "apellidos": "ALVAREZ",
+        "identificacion": "1004802127",
+        "tipo_identificacion": "CC",
+        "direccion": "CALLE 25",
+        "telefono_fijo": "0000000",
+        "numero_celular": "3132919773",
+        "barrio": "SANTANDER"
+    },
+    {
+        "nombres": "camilo",
+        "apellidos": "torres",
+        "identificacion": "1234567",
+        "tipo_identificacion": "CC",
+        "direccion": "calle 9",
+        "telefono_fijo": "000",
+        "numero_celular": "312540583",
+        "barrio": "palmas"
+    }
+]
