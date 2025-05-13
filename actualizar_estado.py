@@ -1,8 +1,6 @@
-# actualizar_estado.py
-import json
 import os
 from datetime import datetime
-from utils import mostrar_json
+from utils import cargar_json, guardar_json
 
 RUTA_ENVIOS = "datos/envios.json"
 
@@ -20,11 +18,8 @@ def actualizar_estado_envio():
         print("No hay envíos registrados.")
         return
 
-    # with open(RUTA_ENVIOS, "r") as archivo:
-    #     envios = json.load(archivo)
+    envios = cargar_json(RUTA_ENVIOS)
 
-    envios = mostrar_json(RUTA_ENVIOS)
-    
     # Mostrar todos los números de guía disponibles
     print("📦 Envíos disponibles:")
     for e in envios:
@@ -46,8 +41,8 @@ def actualizar_estado_envio():
                     envio["fecha_entrega"] = datetime.today().strftime("%Y-%m-%d")
                     print("📅 Fecha de entrega registrada.")
 
-                with open(RUTA_ENVIOS, "w") as archivo:
-                    json.dump(envios, archivo, indent=4)
+                # Guardar cambios en el archivo
+                guardar_json(RUTA_ENVIOS, envios)
                 print("✅ Estado actualizado.")
             except:
                 print("❌ Opción inválida.")

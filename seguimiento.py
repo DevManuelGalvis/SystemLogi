@@ -1,17 +1,17 @@
 import json
 import os
+from utils import cargar_json, guardar_json
 
 RUTA_ENVIOS = "datos/envios.json"
 
 def seguimiento_paquete():
+    # Funcion para hacerle seguimineto al envio
     if not os.path.isfile(RUTA_ENVIOS):
         print("❌ No hay envíos registrados.")
         return
 
     identificacion = input("Ingrese su número de identificación: ").strip()
-    
-    with open(RUTA_ENVIOS, "r") as archivo:
-        envios = json.load(archivo)
+    envios = cargar_json(RUTA_ENVIOS)
 
     # Buscar envíos cuyo destinatario tenga la identificación ingresada
     envios_destinatario = [

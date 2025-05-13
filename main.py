@@ -15,21 +15,21 @@ def menu():
         print("6. Generar reporte de envíos")
         print("0. Salir")
 
-        opcion = int(input("Seleccione una opción: "))
+        opcion = input("Seleccione una opción: ").strip()
 
-        if opcion == 1: 
+        if opcion == "1": 
             menu_clientes()
-        elif opcion == 2:
+        elif opcion == "2":
             registrar_envio()
-        elif opcion == 3:
+        elif opcion == "3":
             listar_clientes()
-        elif opcion == 4:
+        elif opcion == "4":
             seguimiento_paquete()
-        elif opcion == 5:
+        elif opcion == "5":
             actualizar_estado_envio()
-        elif opcion == 6:
+        elif opcion == "6":
             generar_reporte()
-        elif opcion == 0:
+        elif opcion == "0":
             print("Saliendo del sistema. ¡Gracias por usar la plataforma!")
             break
         else:
@@ -37,3 +37,4 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+ 

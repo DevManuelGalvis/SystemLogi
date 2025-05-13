@@ -3,7 +3,7 @@ import os
 import random
 import string
 from datetime import datetime
-
+from utils import cargar_json, guardar_json  
 
 RUTA_CLIENTES = "datos/clientes.json"
 RUTA_ENVIOS = "datos/envios.json"
@@ -23,18 +23,17 @@ def inicializar_archivos():
                 json.dump([], f)
 
 def registrar_envio():
+    # Funcion para registrar un nuevo envío
     inicializar_archivos()
 
-    with open(RUTA_CLIENTES, "r") as f:
-        clientes = json.load(f)
-    with open(RUTA_ENVIOS, "r") as f:
-        envios = json.load(f)
+    clientes = cargar_json(RUTA_CLIENTES)
+    envios = cargar_json(RUTA_ENVIOS)
 
     remitente_id = input("Identificación del remitente: ").strip()
     # remitente = next((c for c in clientes if c["identificacion"] == remitente_id), None)
     remitente = list(filter(lambda c: c["identificacion"] == remitente_id, clientes))
     remitente = remitente[0] if remitente else None
-    # print('remitente', type(remitente))
+ 
     if not remitente:
         print("❌ El remitente no está registrado.")
         return
@@ -55,6 +54,5 @@ def registrar_envio():
     }
 
     envios.append(envio)
-    with open(RUTA_ENVIOS, "w") as f:
-        json.dump(envios, f, indent=4)
+    guardar_json(RUTA_ENVIOS, envios)
     print(f"✅ Envío registrado correctamente. Número de guía: {envio['numero_guia']}")
