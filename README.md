@@ -50,5 +50,3 @@ Los datos se almacenan en la carpeta `datos/` en formato JSON:
 Desarrollado por DevManuelGalvis.
 
 ---
-
-¡Gracias por usar el sistema!
